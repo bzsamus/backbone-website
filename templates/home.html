@@ -27,7 +27,7 @@ var url = url_parameter || sample_url;
 var googleSpreadsheet = new GoogleSpreadsheet();
 googleSpreadsheet.url(url);
 googleSpreadsheet.load(function(result) {
-  for(i = 0; i<result.data.length; i+=4){
+  for(i = 0; i<result.data.length; i+=5){
     $tumblelog.append('<div class="story '+result.data[i+1]+'"><h3>'+result.data[i]+'</h3>'+result.data[i+2]+'</div>');
   }
   $tumblelog.imagesLoaded( function(){
