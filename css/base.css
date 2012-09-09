@@ -73,3 +73,22 @@ img{
 #mobileCarousel div.carousel-inner div.item{
   min-height: 468px;
 }
+
+#drop_zone{
+  border: 2px dashed #bbb;
+  color: #bbb;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#drop_zone.over{
+  background-color:#ccc;
+  color: #fff;
+  border: 2px dashed #888;
+}
+
+#drop_image img{
+  margin-top: 5px;
+}

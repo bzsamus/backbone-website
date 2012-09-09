@@ -1,0 +1,32 @@
+jQuery(document).ready(function(){
+        jQuery('#product_lists li').each(function(){
+                jQuery(this).hover(function(){
+                        if(!jQuery(this).children().filter(':last').hasClass('active')){
+                                jQuery(this).children().filter(':first').animate({
+                                        width:'+=20'
+                                },200,function(){
+                                        jQuery(this).addClass('active');
+                                });
+                        }
+                },function(){
+                        if(!jQuery(this).children().filter(':last').hasClass('active')){
+                                jQuery(this).children().filter(':first').animate({
+                                        width:'-=20'
+                                },200,function(){
+                                        jQuery(this).removeClass('active');
+                                        jQuery(this).clearQueue();
+                                });
+                        }
+                });
+                jQuery(this).click(function(){
+                        jQuery('#product_lists li').each(function(){
+                                jQuery(this).children().filter(':first').removeClass('active');
+                                jQuery(this).children().filter(':first').css('width','10px');
+                                jQuery(this).children().filter(':last').removeClass('active');
+                        });
+                        jQuery(this).children().filter(':first').addClass('active');
+                        jQuery(this).children().filter(':first').css('width','30px');
+                        jQuery(this).children().filter(':last').addClass('active');
+                });
+        });
+});
