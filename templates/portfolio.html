@@ -1,0 +1,113 @@
+<header class="jumbotron subhead">
+  <div class="container">
+    <h2>Portfolio</h2>
+  </div>
+</header>
+
+<div id="portfolio_container" class="hide container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div id="sidenav" class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#website"><i class="icon-chevron-right"></i> Website</a></li>
+          <li><a href="#facebook"><i class="icon-chevron-right"></i> Facebook Application</a></li>
+          <li><a href="#webgame"><i class="icon-chevron-right"></i> Webgame</a></li>
+          <li><a href="#mobile"><i class="icon-chevron-right"></i> Mobile</a></li>
+        </ul>
+      </div>
+      <div class="span9 pull-right">
+        <!-- website
+        ================================================== -->
+        <section id="website" class="span9">
+          <div class="page-header">
+            <h3>Website</h3>
+          </div>
+          <div class="span3">
+            <dl class="dl-horizontal">
+              <dt>OS</dt><dd>freebsd</dd>
+              <dt>Webserver</dt><dd>lighttpd</dd>
+              <dt>Database</dt><dd>MySQL</dd>
+              <dt>Development</dt><dd>PHP, jQuery</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- facebook
+        ================================================== -->
+        <section id="facebook" class="span9">
+          <div class="page-header">
+            <h3>Facebook Application</h3>
+          </div>
+          <div class="span3">
+            <dl class="dl-horizontal">
+              <dt>OS</dt><dd>centOS</dd>
+              <dt>Webserver</dt><dd>nginx</dd>
+              <dt>Database</dt><dd>MySQL</dd>
+              <dt>Development</dt><dd>PHP, Python Django, jQuery, memcache</dd>
+            </dl>
+          </div> 
+        </section>
+
+        <!-- webgame
+        ================================================== -->
+        <section id="webgame" class="span9">
+          <div class="page-header">
+            <h3>Webgame</h3>
+          </div>
+           <div class="span3">
+            <dl class="dl-horizontal">
+              <dt>OS</dt><dd>centOS</dd>
+              <dt>Webserver</dt><dd>nginx</dd>
+              <dt>Database</dt><dd>MongoDB, MySQL</dd>
+              <dt>Development</dt><dd>PHP, amfPHP, PHPRPC, memcache</dd>
+            </dl>
+          </div> 
+        </section>
+
+        <!-- mobile
+        ================================================== -->
+        <section id="mobile" class="span9">
+          <div class="page-header">
+            <h3>Mobile</h3>
+          </div>
+          <div class="span3">
+            <dl class="dl-horizontal">
+              <dt>Platform</dt><dd>iOS</dd>
+              <dt>Development</dt><dd>Objective C, iOS SDK 5.1, iAd, StoreKit</dd>
+            </dl>
+          </div>
+        </section> 
+
+        </section>
+
+      </div>
+    </div>
+</div>
+
+
+<script>
+var $window = jQuery(window);
+jQuery(document).ready(function(){
+jQuery('#portfolio_container').fadeIn();
+var offset = 80;
+
+jQuery('#sidenav li a').click(function(event) {
+    event.preventDefault();
+    jQuery(jQuery(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+/*
+jQuery('#portfolio_container').scrollspy({
+  target: '#sidenav',
+  offset: 80
+});
+*/
+jQuery('.bs-docs-sidenav').affix({
+      offset:{
+        top: 60
+      }
+    })
+});
+</script>

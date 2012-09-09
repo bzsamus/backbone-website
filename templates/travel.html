@@ -1,0 +1,34 @@
+<div id="lab_container" class="container">
+<div class="row">
+  <div class="span8">
+  </div>
+
+<div id="tumblelog" class="span12">
+
+</div> <!-- /#tumblelog -->
+
+
+</div>
+</div>
+
+<script>
+var $tumblelog = jQuery('#tumblelog');
+
+localStorage.clear();
+var doc_url = "https://docs.google.com/spreadsheet/pub?key=0ApfppV5WJMbMdGduWk9wcW9DaXowYmlJOFZBdmRuaUE&single=true&gid=0&output=html";
+var url_parameter = document.location.search.split(/\?url=/)[1]
+var url = url_parameter || doc_url;
+var googleSpreadsheet = new GoogleSpreadsheet();
+googleSpreadsheet.url(url);
+googleSpreadsheet.load(function(result) {
+  for(i = 0; i<result.data.length; i+=3){
+    $tumblelog.append('<div class="story '+result.data[i+2]+'"><img src="'+result.data[i]+'" />'+result.data[i+1]+'</div>');
+  }
+  $tumblelog.imagesLoaded( function(){
+    $tumblelog.masonry({
+      columnWidth: 240
+    });
+  });
+});
+
+</script>

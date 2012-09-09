@@ -1,0 +1,75 @@
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Sidenav */
+  .bs-docs-sidenav {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .bs-docs-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}
+
+img{
+}
+
+.hide{
+  display:none;
+}
+
+.footer {
+	padding: 70px 0;
+	margin-top: 70px;
+	border-top: 1px solid #E5E5E5;
+	background-color: whiteSmoke;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: #777;
+}
+
+#tumblelog .col1 { width: 220px; }
+#tumblelog .col2 { width: 460px; }
+#tumblelog .col3 { width: 700px; }
+
+#tumblelog .story {
+  margin: 10px;
+  border-top: 4px solid #DCB;
+  padding-top: 10px;
+  background: white;
+  float: left;
+}
+
+.bs-docs-sidenav.affix {
+  top: 60px;
+}
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+}
+
+#webCarousel div.carousel-inner div.item{
+  min-height: 357px;
+}
+
+#fbCarousel div.carousel-inner div.item{
+  min-height: 300px;
+}
+
+#wgCarousel div.carousel-inner div.item{
+  min-height: 300px;
+}
+
+#mobileCarousel div.carousel-inner div.item{
+  min-height: 468px;
+}

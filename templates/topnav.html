@@ -1,0 +1,26 @@
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Sam Liu's</a>
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li <% if (navName == 'lab') { %> class="active" <%} %> ><a href="#">Lab</a></li>
+                    <li <% if (navName == 'portfolio') { %> class="active" <%} %> ><a href="#/portfolio/">Portfolio</a></li>
+                  </ul>
+                  <ul class="nav pull-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#/bio/">Bio</a></li>
+                        <li><a href="#/resume/">Resume</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+               </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
