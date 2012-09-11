@@ -15,8 +15,8 @@ define([
     routes: {
       // Define some URL routes
       '/portfolio/*actions': 'showPortfolio', 
-      '/bio': 'showBio',
-      '/resume': 'showResume',
+      '/bio/': 'showBio',
+      '/resume/': 'showResume',
       '/travel': 'showTravel',
       // Default
       '*actions': 'defaultAction'
