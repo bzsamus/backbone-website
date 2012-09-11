@@ -16,6 +16,11 @@
     width: auto;
     top: 0;
   }
+  #toolbox.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
 }
 
 img{
@@ -56,6 +61,15 @@ img{
   position: absolute;
   top: auto;
   bottom: 0px;
+}
+
+#toolbox{
+  background-color:#fff;
+  padding: 20px 0 20px 0;
+}
+
+#toolbox.affix{
+  top:30px;
 }
 
 #webCarousel div.carousel-inner div.item{
