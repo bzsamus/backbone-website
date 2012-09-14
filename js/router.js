@@ -15,7 +15,7 @@ define([
     routes: {
       // Define some URL routes
       '/portfolio/*actions': 'showPortfolio', 
-      '/bio/': 'showBio',
+      '/about/': 'showBio',
       '/resume/': 'showResume',
       '/travel': 'showTravel',
       // Default
@@ -27,7 +27,7 @@ define([
       footerView.render();
     },
     showBio: function(){
-      topNavView.render('bio');
+      topNavView.render('about');
       bioView.render();
       footerView.render()
     },
