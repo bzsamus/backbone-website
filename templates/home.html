@@ -17,7 +17,10 @@
 
 <script>
 var $tumblelog = jQuery('#tumblelog');
-var $winheight = jQuery(window).height();
+jQuery(window).load(function(){
+  var winheight = jQuery(window).height();
+  console.log(winheight);
+});
 
 prettyPrint()
 
