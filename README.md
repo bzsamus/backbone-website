@@ -6,4 +6,4 @@ Frontend developed using twitter bootstrap.<br>
 The goal is to make a light weight website that's easy to maintain.<br>
 To left out heavy duty stuffs like database, google spreadsheet was used for managing contents of the website.
 
-View the live site <a target="_blank" href="http://samliu.phpfogapp.com/">here</a>.
+View the live site <a target="_blank" href="http://bzsamus.com/">here</a>.
